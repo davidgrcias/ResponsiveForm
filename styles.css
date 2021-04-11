@@ -11,6 +11,8 @@ body{
   overflow-x: hidden;
 }
 
+/* nav */
+
 nav{
   display: flex;
   justify-content: space-between;
@@ -31,6 +33,10 @@ nav .right a{
   border-radius: 3px;
 }
 
+/* nav end */
+
+/* container */
+
 .container{
   margin-top: 70px;
   text-align: center;
@@ -50,73 +56,70 @@ nav .right a{
   letter-spacing: 0.5px;
 }
 
-.container .col-2{
-  text-align: center;
+.container form{
+  display: flex;
+  flex-direction: column;
 }
 
-.container .col-2 .top{
+.container form .top{
   display: flex;
   justify-content: center;
 }
 
-.container .col-2 .bottom{
+.container form .bottom{
   display: flex;
   justify-content: center;
 }
 
-.container .col-2 input{
+.container form .top input, .container form .bottom input{
   margin: 10px;
   padding: 15px;
   width: 280px;
   border: none;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-.container .col-1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container .col-1 select{
-  width: 585px;
+.container form select{
+  width: 580px;
   padding: 15px;
   margin: 10px;
   color: #888;
   box-sizing: border-box;
+  align-self: center;
 }
 
-.container .col-1 input{
+.container form > input{
   color: white;
   border: none;
   background: blue;
   padding: 15px;
   box-sizing: border-box;
-  width: 585px;
+  width: 580px;
   margin-top: -10px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.container .col-1 p{
+.container form p{
   color: #77cfff;
   margin: 20px;
 }
 
-.container .col-1 p a{
+.container form p a{
   color: #77cfff;
 }
 
-@media (max-width: 620px){
+@media (max-width: 605px){
   .container .title h1{
     font-size: 34px;
     letter-spacing: 0px;
   }
-  .container .col-1 select{
-    width: 95.8%;
-    margin-left: 14.5px;
+  .container form select{
+    width: 96%;
   }
-  .container .col-1 input{
-    width: 95.6%;
-    margin-left: 6px;
+  .container form > input{
+    width: 96%;
   }
 }
 
@@ -129,13 +132,14 @@ nav .right a{
     max-width: 80%;
     margin: auto;
   }
-  .container .col-2 .top{
+  .container .title p{
+    max-width: 90%;
+    margin: auto;
+  }
+  .container form .top, .container form .bottom{
     display: block;
   }
-  .container .col-2 .bottom{
-    display: block;
-  }
-  .container .col-2 input{
-    width: 95.3%;
+  .container form .top input, .container form .bottom input{
+    width: 96%;
   }
 }
