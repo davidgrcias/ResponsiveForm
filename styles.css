@@ -1,0 +1,141 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body{
+  max-width: 1500px;
+  margin: auto;
+  background: rgb(62, 120, 245);
+  overflow-x: hidden;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+  margin: 20px auto;
+  align-items: center;
+}
+
+nav .left img{
+  width: 190px;
+}
+
+nav .right a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid #b1f5ff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.container{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.container .title h1{
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.container .title p{
+  color: #77cfff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.container .col-2{
+  text-align: center;
+}
+
+.container .col-2 .top{
+  display: flex;
+  justify-content: center;
+}
+
+.container .col-2 .bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.container .col-2 input{
+  margin: 10px;
+  padding: 15px;
+  width: 280px;
+  border: none;
+  box-sizing: border-box
+}
+
+.container .col-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .col-1 select{
+  width: 585px;
+  padding: 15px;
+  margin: 10px;
+  color: #888;
+  box-sizing: border-box;
+}
+
+.container .col-1 input{
+  color: white;
+  border: none;
+  background: blue;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 585px;
+  margin-top: -10px;
+}
+
+.container .col-1 p{
+  color: #77cfff;
+  margin: 20px;
+}
+
+.container .col-1 p a{
+  color: #77cfff;
+}
+
+@media (max-width: 620px){
+  .container .title h1{
+    font-size: 34px;
+    letter-spacing: 0px;
+  }
+  .container .col-1 select{
+    width: 95.8%;
+    margin-left: 14.5px;
+  }
+  .container .col-1 input{
+    width: 95.6%;
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 445px){
+  nav .left img{
+    width: 160px;
+  }
+  .container .title h1{
+    font-size: 35px;
+    max-width: 80%;
+    margin: auto;
+  }
+  .container .col-2 .top{
+    display: block;
+  }
+  .container .col-2 .bottom{
+    display: block;
+  }
+  .container .col-2 input{
+    width: 95.3%;
+  }
+}
