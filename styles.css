@@ -6,7 +6,7 @@
 body{
   max-width: 1500px;
   margin: auto;
-  background: rgb(62, 120, 245);
+  background: #111;
   overflow-x: hidden;
 }
 
@@ -25,13 +25,13 @@ nav .left img{
 nav .right a{
   color: white;
   text-decoration: none;
-  border: 1px solid #b1f5ff;
+  border: 1px solid white;
   padding: 10px;
   border-radius: 3px;
 }
 
 .container{
-  margin-top: 70px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@ nav .right a{
 }
 
 .container .title p{
-  color: #77cfff;
+  color: white;
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 18px;
@@ -94,12 +94,12 @@ nav .right a{
 }
 
 .container form p{
-  color: #77cfff;
+  color: white;
   margin: 20px;
 }
 
 .container form p a{
-  color: #77cfff;
+  color: white;
 }
 
 @media (max-width: 596px){
@@ -116,9 +116,6 @@ nav .right a{
 }
 
 @media (max-width: 445px){
-  nav .left img{
-    width: 160px;
-  }
   .container .title h1{
     font-size: 35px;
     max-width: 80%;
